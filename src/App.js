@@ -9,6 +9,7 @@ import SignUp from './components/pages/SignUp/SignUp';
 import Footer from './components/pages/Footer/Footer';
 import NotFoundPage from './components/pages/NotFoundPage/NotFoundPage';
 import HttpsRedirect from 'react-https-redirect'
+import SignIn from './components/pages/SignIn/SignIn';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/services" component={Services}/>
         <Route path="/products" component={Products}/>
         <Route path="/contacts" component={SignUp}/>
+        <Route path="/checkout" component={SignIn}/>
         <Route component={NotFoundPage}/>
       </Switch>
       <Footer />
