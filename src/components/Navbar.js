@@ -55,7 +55,8 @@ function Navbar() {
                              <Link to='/products'className="nav-links" onClick={closeMobileMenu}>
                                  Products
                              </Link>
-                         </li> 
+                         </li>
+                        
                          <li className="nav-btn">
                             {button ? (
                                 <Link to='/contacts' className="btn-link">
@@ -69,6 +70,21 @@ function Navbar() {
                                </Link> 
                             )}
                          </li>
+
+                         <li className="nav-btn">
+                            {button ? (
+                                <Link to='/checkout' className="btn-link">
+                                    <Button buttonStyle='btn--outline'>Checkout Out</Button>
+                                </Link>
+                            ): (
+                               <Link to='/checkout' className="btn-link" onClick={closeMobileMenu}>
+                                   <Button buttonStyle='btn--outline'
+                                       buttonSize='btn--mobile'
+                                   >Checkout Out</Button>
+                               </Link> 
+                            )}
+                         </li>
+                         
                     </ul>
                </div>
            </div>
